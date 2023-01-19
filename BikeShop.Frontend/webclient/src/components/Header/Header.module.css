@@ -1,0 +1,36 @@
+.container {
+  height: 57px;
+  display: grid;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.marketName {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.time {
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+}
+
+.employeeName {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.burger {
+  margin-right: 20px;
+}
+
+.ring {
+  margin-left: 20px;
+  position: relative;
+}
