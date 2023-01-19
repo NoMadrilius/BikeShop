@@ -13,6 +13,7 @@ import '@fontsource/roboto/700.css';
 
 
 import MainPage from './components/pages/MainPage';
+import Header from './components/Header/Header';
 
 
 const darkTheme = createTheme({
@@ -30,7 +31,7 @@ const App: React.FC = () => {
       <ThemeProvider theme={darkTheme}>
         <CssBaseline />
         <Router>
-          <div>Header</div>
+          <Header />
           <Suspense>
             <Routes>
               <Route path='/' element={<MainPage />} />
