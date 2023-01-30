@@ -16,6 +16,7 @@ import MainPage from '../pages/main/MainPage';
 import Header from '../widgets/Header/Header';
 import LoginForm from '../pages/loginForm/LoginForm';
 import WorkCatalog from '../pages/Service/WorkCatalog';
+import WorkCatalogPage from 'pages/workCatalogPage/workCatalogPage';
 
 const darkTheme = createTheme({
   palette: {
@@ -34,6 +35,7 @@ const App: React.FC = () => {
             <Routes>
               <Route path="/registration" element={<RegistrationPage />} />
               <Route path="/productcatalog" element={<WorkCatalog />} />
+              <Route path="/workcatalog" element={<WorkCatalogPage />} />
               <Route path="/" element={<LoginForm />} />
               <Route path="/main" element={<MainPage />} />
               <Route path="*" element={<div>Not Found</div>} />
