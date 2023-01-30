@@ -1,0 +1,15 @@
+.Content{
+    background-color: #33373B;
+    margin-right: 10px;
+    border-radius: 1%;
+    height: 98vh;
+}
+.navbar{
+    background-color: #33373B;
+    margin-left: 10px;
+    border-radius: 3%;
+    height: 98vh;
+}
+.myButton{
+    text-align: center;
+}
