@@ -12,11 +12,11 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
 import RegistrationPage from 'pages/RegistrationPage/RegistrationPage';
+import WorkCatalogPage from 'pages/workCatalogPage/workCatalogPage';
 import MainPage from '../pages/main/MainPage';
 import Header from '../widgets/Header/Header';
 import LoginForm from '../pages/loginForm/LoginForm';
 import WorkCatalog from '../pages/Service/WorkCatalog';
-import WorkCatalogPage from 'pages/workCatalogPage/workCatalogPage';
 
 const darkTheme = createTheme({
   palette: {

@@ -1,28 +1,22 @@
-import React from "react";
-import ButtonWC from "shared/ui/workCatalogButton/workCatalogButton";
+/* eslint-disable prettier/prettier */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import React from 'react';
+import FileSystemNavigator from 'shared/ui/workCatalogButton/workCatalogTree';
+import ButtonWC from 'shared/ui/workCatalogButton/workCatalogButton';
 
+const WCnavbar: React.FC = () => {
+  const test = () => {
+    alert('jkrvhklersb');
+  };
+  const test2 = () => {
+    alert('Категория 2');
+  };
 
-
-
-
-
-const WCnavbar:React.FC =()=>{
-const test =()=>{
-    alert("jkrvhklersb")
-}
-const test2 =()=>{
-    alert("Категория 2")
-}
-
- return(
+  return (
     <div>
-    <div >  <ButtonWC text={"Категория 1"} navigation={test}/> </div>
-    <div style={{marginTop:"10px"}}>  <ButtonWC text={"Категория 2"} navigation={test2}/> </div>
-    <div style={{marginTop:"10px"}}>  <ButtonWC text={"Категория 3"}/> </div>
-    <div style={{marginTop:"10px"}}>  <ButtonWC text={"Категория 4"}/> </div>
-    <div style={{marginTop:"10px"}}>  <ButtonWC text={"Категория 5"}/> </div>
+      <FileSystemNavigator test={test} test2={test2}/>  
     </div>
- )
-}
+  );
+};
 
-export default WCnavbar
+export default WCnavbar;

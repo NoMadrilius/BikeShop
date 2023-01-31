@@ -29,12 +29,14 @@ declare module '@mui/material/Button' {
   }
 }
 
-export default function ButtonWC(props:any) {
+const ButtonWC = (props: any) => {
   return (
     <ThemeProvider theme={theme}>
       <Button color="neutral" variant="contained" onClick={props.navigation}>
-       {props.text}
+        {props.text}
       </Button>
     </ThemeProvider>
   );
-}
+};
+
+export default ButtonWC;
