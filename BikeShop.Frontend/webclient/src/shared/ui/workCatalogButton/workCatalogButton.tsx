@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable react/function-component-definition */
 import * as React from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Button from '@mui/material/Button';
@@ -29,7 +31,7 @@ declare module '@mui/material/Button' {
   }
 }
 
-const ButtonWC = (props: any) => {
+export default function ButtonWC(props: any) {
   return (
     <ThemeProvider theme={theme}>
       <Button color="neutral" variant="contained" onClick={props.navigation}>
@@ -37,6 +39,4 @@ const ButtonWC = (props: any) => {
       </Button>
     </ThemeProvider>
   );
-};
-
-export default ButtonWC;
+}
