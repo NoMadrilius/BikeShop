@@ -15,7 +15,7 @@ type workType = {
 };
 type stateType = {
   workGroups: Array<workType>;
-  workGet: any;
+  workGet: () => void;
 };
 
 const workCatalogStore = create<stateType>((set) => ({
@@ -25,7 +25,7 @@ const workCatalogStore = create<stateType>((set) => ({
     try {
       const response = await axios.get('http://185.47.172.78/api/work/getbygroupid/1');
       // console.log(response);
-      set({ workGroups: response.data.works } as any);
+      set({ workGroups: response.data.works });
     } catch (error) {
       console.error(error);
     }
